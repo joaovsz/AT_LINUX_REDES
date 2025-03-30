@@ -1,0 +1,17 @@
+# Nmap 7.95 scan initiated Sun Mar 30 14:49:20 2025 as: nmap -sV --script vuln -oN nmap.txt 192.168.100.19
+Nmap scan report for 192.168.100.19
+Host is up (0.000046s latency).
+Not shown: 999 closed tcp ports (conn-refused)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 9.9 (protocol 2.0)
+| vulners: 
+|   cpe:/a:openbsd:openssh:9.9: 
+|     	PACKETSTORM:189283	6.8	https://vulners.com/packetstorm/PACKETSTORM:189283	*EXPLOIT*
+|     	F79E574D-30C8-5C52-A801-66FFA0610BAA	6.8	https://vulners.com/githubexploit/F79E574D-30C8-5C52-A801-66FFA0610BAA	*EXPLOIT*
+|     	CVE-2025-26465	6.8	https://vulners.com/cve/CVE-2025-26465
+|     	1337DAY-ID-39918	6.8	https://vulners.com/zdt/1337DAY-ID-39918	*EXPLOIT*
+|     	CVE-2025-26466	5.9	https://vulners.com/cve/CVE-2025-26466
+|_    	CE606E2D-D0A5-5DE8-8A61-E7AB65789A99	5.9	https://vulners.com/githubexploit/CE606E2D-D0A5-5DE8-8A61-E7AB65789A99	*EXPLOIT*
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Mar 30 14:49:32 2025 -- 1 IP address (1 host up) scanned in 11.36 seconds
